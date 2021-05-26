@@ -27,11 +27,11 @@ def is_square(n):
     if n <= 0:
         return False
     else:
-        return n%n**0.5==0
+        return n%n**0.5==0 #as 0 is a perfect square i found both of these solutions incorrect. # 0%0 is undefined,so this solution does not work
 
 # Solution II:
 def is_square(n):
-    return n > 0 and (n**0.5).is_integer()
+    return n >= 0 and (n**0.5).is_integer() # here it should be n >=0 and (n**0.5).is_integer()
 
 ###
 # Challenge 3. Triangular Treasure
